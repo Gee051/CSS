@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    animation: move-container 2s 8s;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    color: white;
+    /* animation-name: move-box;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+    animation-play-state: running; */
+    animation: move-box 10s running forwards linear;
+}
+
+
+.box:hover {
+    animation-play-state: paused;
+
+}
+
+@keyframes move-box {
+    0%{
+        transform: translate(0px);
+    }
+    20% {
+        transform: translate(200px);
+        background-color: aquamarine;
+    }
+
+    40% {
+        transform: translateX(200px) translateY(200px);
+        background-color: lightpink;
+        
+    }
+    60% {
+        transform:translateY(200px);
+        backgroundcolor: lightgreen;
+    }
+    80% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translateX(100px) translateY(1000px) rotate(360deg);
+        background-color: mediumseagreen;
+        
+    }
+    /* you can also use this */
+    /* 100% {
+        transform: translateX(-100px) translateY(-200px) ;
+        background-color: mediumseagreen;
+    } */
+        
+}
+
+@keyframes move-container {
+    from{
+        transform: rotate(0deg);
+    
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}

@@ -1,0 +1,41 @@
+body {
+    padding: 10%;
+    perspective: 1000px;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    /* transform: translate(50px, 70px); */
+    /* transition: 0.8s; */
+    /* transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0.002s; */
+    transition: 0.8s linear ;
+    transform-origin: center;
+    border-radius: 15px;
+    padding: 20px;
+
+
+}
+
+.box:hover {
+    /* transform: translate(40px,40px) rotateX(40deg) rotateY(360deg); */
+    transform: translateY(60%);
+    background-color: aquamarine;
+    /* transform: scaleY(1.5); */
+    /* transform: skew(40deg); */
+}
+
+
+
+/* transformation types
+translate -- change in position
+rotate -- change in axis.. you rotate in radians or degrees
+scale -- change in size
+skew --- change in perspective
+ */

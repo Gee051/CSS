@@ -1,0 +1,136 @@
+/* Name selectors */ 
+h1 {
+    background-color: black;
+    color: #fff;
+}
+li {
+    padding: 10px;
+    background-color: beige;
+    margin-bottom: 5px;
+}
+
+/* ID & Class selectors */
+/* Note: you can be more specific by adding the name of the element to the class or id selector */
+li.item {
+    border-left: 2px solid orangered;
+}
+
+#unique-item {
+    border-bottom: 2px solid orange;
+}
+
+/* Decendant selectors */
+ section h2{
+    padding: 10px;
+    background-color: midnightblue;
+    color: aquamarine;
+}
+
+section h2 span {
+    background-color: orange;
+    padding: 5px;
+    margin-left: 5px;
+}
+section #secret .supersecret {
+    background-color: #000;
+}
+
+section #secret .supersecret:hover {
+    color: white;
+}
+
+/* Pseudo selectors */
+/* --- categories --- */
+/* pseudo classes */
+/* --- state */
+
+button {
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: mediumpurple;
+    color: white;
+}
+button:hover{
+    box-shadow: 0 0 15px #513251;
+}
+button:active {
+    background-color: red;
+}
+
+a{
+    display: inline-block
+}
+
+a:visited {
+    border: 3px dashed darkslateblue;
+    border-radius: 8px;
+    border: 1px dashed gray;
+    outline: none;
+
+}
+
+input:disabled{
+    padding: 10px;
+    border: 1px dashed red;
+}
+
+/* --- Position */
+.results p:first-child {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.results p:nth-child(2){
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.results p:nth-of-type(odd) {
+    background-color: dodgerblue;
+}
+.results p:not(.josh) {
+    background: mediumaquamarine;
+}
+.results p:is(.josh, .lola) {
+    background-color: tomato;
+
+}
+
+/* pseudo Elements */
+
+
+/* Sibling selectors */
+/* Adjacent sibling selector */
+h4 + div {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: linear-gradient(blue, aqua);
+}
+
+/* General sibling selector */
+h4 ~ div {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: linear-gradient(blue, aqua);
+}
+
+/* Attribut selectors */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid blue;
+} 
+
+input[placeholder="Enter your email"] {
+    padding: 10px;
+    border: 1px solid red;
+}
+/*  Wildcard Selectors */
