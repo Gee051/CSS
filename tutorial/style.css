@@ -1,0 +1,44 @@
+.g1{
+    background-color: #000;
+    height: 50px;
+}
+
+#grace {
+    background-color: aquamarine;
+    height: 50px;
+}
+
+#btn {
+    height: 30px;
+    width: 30px;
+}
+
+#btns {
+    width: 50px;
+}
+
+section {
+    background-color: blueviolet;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 10px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    height: 50px;
+}
+
+#spn {
+    height: 50px;
+    background-color: burlywood;
+    border: burlywood;
+}
+
+#spn:hover {
+    opacity: 50%;
+}
